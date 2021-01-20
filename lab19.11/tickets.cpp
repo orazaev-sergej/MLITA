@@ -56,8 +56,6 @@ int main()
     --firstHalfTicket;
     secondHalfTicket = firstHalfTicket;
 
-    std::cout << numAllTickets;
-
     int sumFristHalfTicket = 0;
     int numUnhappyTickets = 0;
 
