@@ -41,7 +41,7 @@ int main()
     int firstHalfTicket = 1;
     int secondHalfTicket = 1;
 
-    int numAllTickets = 1;
+    unsigned long long numAllTickets = 1;
 
     for (int i = 0; i < (2 * n); i++)
     {
@@ -65,7 +65,10 @@ int main()
         for (int j = 0; j <= secondHalfTicket; j++)
         {
             if (sumSecondHalfTicket - sumFristHalfTicket == 13)
+            {
                 numUnhappyTickets++;
+                break;
+            }
             sumSecondHalfTicket++;
         }
         sumFristHalfTicket++;
